@@ -1,0 +1,109 @@
+body{
+    background-color: lightgreen;
+    margin:0%;
+    padding: 0%;
+
+}
+.perro{
+    background-color: #fdb44e;
+    height: 80px;
+    width: 120px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border-radius:0 0 0 120px;
+
+}
+.body{
+    background-color: #fdb44e;
+    height: 110px;
+    width: 210px;
+    position: relative;
+    top: 335px;
+    left: 550px;
+    border-radius: 0 0 0 60px;
+}
+.pata1, .pata2, .pata3, .pata4 {
+    background-color: #fdb44e;
+    height: 50px;
+    width: 18px;
+    position: relative;
+}
+.pata1{
+    left: 589px;
+    top: 330px;
+}
+.pata2{
+    left: 630px;
+    top: 281px;
+}
+.pata3{
+    left: 698px;
+    top: 235px;
+}
+.pata4{
+    left: 742px;
+    top: 184px;
+}
+.cola{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 155px solid #fdb44e;
+    position: relative;
+    bottom: 60px;
+    left: 749px;
+    transform: rotate(30deg);
+    animation: wag 1s infinite;
+}
+@keyframes wag{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+
+.oreja{
+    background-color: rgba(151,89,2,.8);
+    width: 45px;
+    height: 90px;
+    border-radius: 0 0 100px 100px ;
+    position: relative;
+    left: 553px;
+    bottom: 201px;
+}
+.nariz{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 296px;
+    left: 470px;
+}
+.ojo{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position:relative;
+    bottom: 297px;
+    left: 530px;
+
+}
+.lengua{
+    background-color: red;
+    height: 25px;
+    width: 13px;
+    border-radius: 10px;
+    position: relative;
+    left: 490px;
+    bottom: 285px;
+    z-index:-1;
+    animation: move 1s infinite;
+}
+@keyframes move{
+    50%{
+        transform: rotate(45deg); translateY(2.5px);
+    }
+}
